@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Movies Gallery</title>
+	<script type="text/javascript" src="page.js"></script>
+	<script src="https://kit.fontawesome.com/5304c2fdb1.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="page.css">
+</head>
+<body>
+	<div id="gallery" class="tabs-view">
+		<h1>Movies Gallery</h1>
+		<div id="option-tools">
+			<select onchange="filterMoviesByGenre(this.options[this.selectedIndex].text)" id="select-genre">
+				<option disabled selected >select genre</option>
+			</select>
+			<div id="view-mods">
+				<p>
+					view as:
+					<i onclick="selectTabsView()" class="fas fa-table"></i>
+					<i onclick="selectRowsView()" class="fas fa-list"></i>
+				</p>
+			</div>
+		</div>
+		<div id="gallery-movies">
+		</div>
+	</div>
+	<div id="favorite-movies">
+		<img />
+		<h1>Favorite Movies</h1>
+		<div id="favorite-movies-list">
+		</div>
+	</div>
+</body>
+
+<!-- The Modal -->
+<div id="movie-modal" class="modal">
+	<!-- Modal content -->
+	<div class="modal-content">
+		<div id="main-info">
+			<img id="movie-image" />
+			<div id="favorite-year-block">
+				<div id="movie-favorite-image-container">
+                    <img id="movie-favorite-image" />
+				</div>
+				<p id="movie-year"></p>
+			</div>
+			<div id="genres-block"></div>
+		</div>
+		<div id="add-info">
+			<h1 id="movie-name"></h1>
+			<p id="movie-description"></p>
+			<p id="movie-director">
+				Director:
+				<span id="director-name"></span>
+			</p>
+			<p id="movie-stars">
+				Starring:
+			</p>
+		</div>
+		<span class="close" onClick="closeMovieModal()">&times;</span>
+	</div>
+</div>
+</html>

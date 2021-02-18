@@ -1,0 +1,196 @@
+
+/*tabs-view*/
+.tabs-view .movie-tab {
+    flex: 0 0 200px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+}
+
+.tabs-view .movie-image {
+    width: 100%;
+    max-height: 50%;
+    margin-top: -50px;
+    position: relative;
+    z-index: 1;
+}
+
+.tabs-view .genres-movie-block {
+    display: none;
+}
+
+.tabs-view .movie-descrition {
+    display: none;
+}
+
+.tabs-view .movie-header-wraper {
+    text-align: center;
+}
+
+/*end tabs view*/
+
+/*rows-view*/
+.rows-view .movie-tab {
+    margin: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgb(0 0 0 / 30%);
+    width: 100%;
+}
+
+.rows-view .movie-image {
+    height: 300px;
+    width: 250px;
+    position: relative;
+    z-index: 1;
+    float:left;
+    margin:20px;
+}
+
+.rows-view h3 {
+    float: left;
+    margin-right: 30px;
+}
+
+.rows-view .movie {
+    width: 100%;
+    height: 100%;
+}
+
+.rows-view .genres-movie-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.rows-view .movie-header-wraper {
+    display: flex;
+    flex-direction: row;
+}
+/*end rows view*/
+.star-image {
+    width: 64px;
+    height: 64px;
+    float: right;
+    position: relative;
+    z-index: 2;
+}
+
+#gallery-movies {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+#gallery {
+    width: 75%;
+    position: relative;
+    float: left;
+}
+
+#favorite-movies {
+    width: 25%;
+    position: relative;
+    float: left;
+}
+
+.view-more-image, remove-from-favorite-image {
+    width: 18px;
+    height: 18px;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; 
+    z-index: 3; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    display: flex;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    flex: 5%;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#main-info {
+    flex: 40%;
+}
+
+#add-info {
+    flex: 55%;
+}
+
+#movie-image {
+    width: 200px;
+    height: 200px;
+}
+
+#favorite-year-block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+#movie-favorite-image-container {
+    flex: 50%;
+}
+
+#movie-year {
+    flex: 50%;
+}
+
+#movie-favorite-image {
+    width: 64px;
+    height: 64px;
+}
+
+#genres-block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.genre {
+    margin-right: 10px;
+}
+
+.favorite-film-name {
+    padding-left: 15px;
+}
+
+.remove-from-favorite {
+    margin-left: 5px;
+}
+
+#option-tools {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 50px 0 5px;
+}
